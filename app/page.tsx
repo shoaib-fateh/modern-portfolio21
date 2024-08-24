@@ -1,5 +1,6 @@
 "use client";
 
+import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { FaHome } from "react-icons/fa";
@@ -12,6 +13,7 @@ const Page = () => {
           navItems={[{ name: "Home", link: "/", icon: <FaHome /> }]}
         />
         <Hero />
+        <Grid />
       </div>
     </main>
   );
