@@ -2,6 +2,7 @@
 
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
+import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { FaHome } from "react-icons/fa";
 
@@ -14,6 +15,7 @@ const Page = () => {
         />
         <Hero />
         <Grid />
+        <RecentProjects />
       </div>
     </main>
   );
