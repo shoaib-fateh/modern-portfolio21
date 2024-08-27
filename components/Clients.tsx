@@ -4,7 +4,7 @@ import { companies, testimonials } from "@/data";
 
 function Clients() {
   return (
-    <div className="py-20" id="#testimonials">
+    <section id="testimonials" className="py-20">
       <h1 className="font-bold text-4xl md:text-5xl text-center">
         Kind Words from <div className="text-purple">Satisfied Clients</div>
       </h1>
@@ -36,7 +36,7 @@ function Clients() {
           </React.Fragment>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
