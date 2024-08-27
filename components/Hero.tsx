@@ -36,7 +36,8 @@ function Hero() {
           />
 
           <p>
-            Hi, I&apos;m Fateh, a Next.js Developer based in Developer's World!
+            Hi, I&apos;m Fateh, a Next.js Developer based in Developer&apos;s
+            World!
           </p>
 
           <a href="#about">
