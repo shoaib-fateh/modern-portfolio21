@@ -17,7 +17,10 @@ const Approach = () => {
           and key functionalities. We'll discuss things like site structure, 
           navigation, and content requirements."
         >
-          <CanvasRevealEffect animationSpeed={5.1} />
+          <CanvasRevealEffect
+            animationSpeed={5.1}
+            containerClassName="bg-emerald-900 rounded-3xl overflow-hidden"
+          />
         </Card>
         <Card
           title="Development & Progress Update"
@@ -72,7 +75,6 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      // change h-[30rem] to h-[35rem], add rounded-3xl
       className="border border-black/[0.2] group/canvas-card flex items-center justify-center
        dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] rounded-3xl "
       style={{
@@ -124,6 +126,7 @@ const Card = ({
     </div>
   );
 };
+
 const AceternityIcon = ({ order }: { order: string }) => {
   return (
     <div>
