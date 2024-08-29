@@ -1,36 +1,42 @@
-import { projects } from "@/data";
-import React from "react";
-import { PinContainer } from "./ui/PinContainer";
+"use client";
+
 import { FaLocationArrow } from "react-icons/fa6";
 
-function RecentProjects() {
-  return (
-    <section id="#projects" className="py-20">
-      <h1 className="font-bold text-4xl md:text-5xl text-center">
-        A Small Selection of <div className="text-purple">Recent Projects</div>
-      </h1>
+import { projects } from "@/data";
+import { PinContainer } from "./ui/Pin";
 
+const RecentProjects = () => {
+  return (
+    <div className="py-20">
+      <h1 className="heading">
+        A small selection of{" "}
+        <span className="text-purple">recent projects</span>
+      </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map(({ id, title, link, img, des, iconLists }) => (
           <div
             key={id}
-            className="sm:h-[41rem] h-[32rem] sm:w-[570px]  lg:min-h-[32.5rem] flex items-center justify-center w-[80vw]"
+            className="flex items-center justify-center w-full sm:w-96 lg:w-[45%] h-[25rem] lg:min-h-[32.5rem] mb-10"
           >
             <PinContainer title={link} href={link}>
               <div className="relative flex items-center justify-center sm:w-[570px] sm:h-[40vh] h-[30vh] w-[80vw] overflow-hidden mb-10">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d] ">
                   <img src="./bg.png" alt="bg-img" />
                 </div>
-                <img
-                  src={img}
-                  alt={title}
-                  className="z-10 absolute bottom-10"
-                />
+                <img src={img} alt="cover" className="z-10 absolute bottom-0" />
               </div>
+
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {title}
               </h1>
-              <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
+
+              <p
+                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+                style={{
+                  color: "#BEC1DD",
+                  margin: "1vh 0",
+                }}
+              >
                 {des}
               </p>
 
@@ -38,29 +44,30 @@ function RecentProjects() {
                 <div className="flex items-center">
                   {iconLists.map((icon, index) => (
                     <div
-                      key={icon}
-                      className="border border-white/[0.2] bg-black rounded-full lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                      key={index}
+                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                       style={{
-                        transform: `translateX(-${5 * index * 2}px)`,
+                        transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt={icon} className="p-2" />
+                      <img src={icon} alt="icon5" className="p-2" />
                     </div>
                   ))}
                 </div>
+
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs test-sm text-purple">
+                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
                     Check Live Site
                   </p>
-                  <FaLocationArrow className="ms-3" color="#CBACE9" />
+                  <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
               </div>
             </PinContainer>
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
-}
+};
 
 export default RecentProjects;
