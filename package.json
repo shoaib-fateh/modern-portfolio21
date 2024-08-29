@@ -31,10 +31,9 @@
     "three": "^0.163.0",
     "three-globe": "^2.31.1",
     "uuid": "^10.0.0",
-    "vercel": "^34.0.0"
+    "vercel": "^32.3.0"
   },
   "devDependencies": {
-    "@next/swc-win32-x64-msvc": "^14.2.5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
