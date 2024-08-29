@@ -19,16 +19,6 @@
   </div>
 </div>
 
-## 📋 Table of Contents
-
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Code Snippets](#snippets)
-6. 🔗 [Assets](#links)
-7. 🚀 [More](#more)
-
 ## 🤖 Introduction
 
 Welcome to a portfolio that blends modern web technologies: Next.js for seamless user interfaces, Three.js for engaging 3D visuals, Framer Motion for fluid animations, and TailwindCSS for stylish and responsive designs.
